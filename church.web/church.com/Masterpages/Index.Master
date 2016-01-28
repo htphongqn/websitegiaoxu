@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Index.master.cs" Inherits="church.Masterpages.Index" %>
+
+<%@ Register src="../Usercontrols/Header.ascx" tagname="Header" tagprefix="uc1" %>
+<%@ Register src="../Usercontrols/MenuTop.ascx" tagname="MenuTop" tagprefix="uc2" %>
+<%@ Register src="../Usercontrols/Slide.ascx" tagname="Slide" tagprefix="uc3" %>
+<%@ Register src="../Usercontrols/HomeContent.ascx" tagname="HomeContent" tagprefix="uc4" %>
+<%@ Register src="../Usercontrols/ToolsRight.ascx" tagname="ToolsRight" tagprefix="uc5" %>
+<%@ Register src="../Usercontrols/Footer.ascx" tagname="Footer" tagprefix="uc6" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/Resources/styles/styles.css"/>
+    <script type="text/javascript" src="/Resources/scripts/jquery-1.12.0.min.js"></script>
+    <script type='text/javascript' src='/Resources/scripts/jquery.easing.1.3.js'></script>
+    <script type='text/javascript' src='/Resources/scripts/camera.js'></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    <!--Header-->
+    <uc1:Header ID="Header1" runat="server" />
+    <!--End Header-->
+    <!--MenuTop-->
+    <uc2:MenuTop ID="MenuTop1" runat="server" />
+    <!--End MenuTop-->
+    <!--Slide-->
+    <uc3:Slide ID="Slide1" runat="server" />
+    <!--End Slide-->
+    <main class="main" role="main">
+        <div class="container">
+            <div class="main-content">
+                <!--HomeContent-->
+                <uc4:HomeContent ID="HomeContent1" runat="server" />
+                <!--End HomeContent-->
+            </div>
+            <div class="aside side-right">
+                <!--ToolsRight-->
+                <uc5:ToolsRight ID="ToolsRight1" runat="server" />
+                <!--End ToolsRight-->
+            </div>
+        </div>
+    </main>
+    <!--Footer-->
+    <uc6:Footer ID="Footer1" runat="server" />
+    <!--End Footer-->
+    <!---================script===================--> 
+    <script type="text/javascript" src="/Resources/scripts/js.js"></script>
+    </form>
+</body>
+</html>

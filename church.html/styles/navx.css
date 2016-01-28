@@ -1,0 +1,66 @@
+﻿/*Nav Desktop*/
+.menu { width: 100%; clear: both; position: relative; z-index: 999996; background: #0B2845; border-top:solid 1px #214161 }
+.menu .container { text-align: left; position: relative }
+.parent h3 i { position: absolute; right: 10px; top: 0px; color: #000; font-size: 30px; padding: 0 30px; line-height: 40px }
+.navx { width: 100%; clear: both; position: relative; display: inline-block; z-index: 0 }
+.navx h3, .navx h4, .navx h5 { font-weight: normal; margin: 0; padding: 0; font-size: 100%; -webkit-margin-before: 0em; -webkit-margin-after: 0em; }
+.navx >ul { text-align: left }
+.navx a { text-decoration: none; white-space: nowrap; }
+.navx ul { list-style: none; padding: 0px; margin: 0px; }
+.navx ul ul { display: none; position: absolute; }
+.navx ul ul a { line-height: 30px; padding-right: 10px; padding-left: 10px; color: #000; }
+.navx ul ul ul { left: 100%; top: 0px; }
+.navx ul ul li { position: relative; min-width: 190px; text-align: left; border-bottom: solid 1px #eee; position: relative; padding: 3px }
+.navx ul ul li:last-child { border: 0; }
+.navx ul ul li:hover { background: #0E3053 }
+.navx ul ul li:hover >.lv > a { color: #fff; }
+.navx ul li:hover>ul { display: block; }
+.navx>ul { clear: both; display: block; width: 100%; float: right }
+.navx>ul>li { z-index: 1; position: relative; display: inline-block; margin: 0; text-align: center; margin-left: 0; margin-right: 0; }
+.navx>ul>li> .lv1 >a { text-transform: uppercase; color: #fff; font-size: 1.2em; line-height: 50px; padding-bottom: 5px; padding-left: 25px; padding-right: 25px; font-family: 'condense', Arial, Helvetica, sans-serif; font-weight: 400; }
+.navx>ul>li:hover> .lv1 > a, .navx>ul>li.active> .lv1 > a, .navx>ul>li:focus> .lv1 > a { color: #FBBE36 }
+.navx>ul>li:hover, .navx>ul>.active { }
+.navx > ul > li > ul { top: 100%; left: 0; margin-top: 0px; z-index: 9; }
+.navx >ul> li >i, .navx ul ul li> i { position: absolute; right: 0; top: 0; line-height: 35px; width: 30px; text-align: center; color: #000; display: none }
+.btn_navx { display: none; position: relative; height: 34px; line-height: 34px; background: #B61819; color: #fff; width: 40px; text-align: center; font-size: 23px; color: #fff; z-index: 99999; margin:5px }
+.tg-search { display: none }
+ @media screen and (min-width: 768px) {
+.navx ul ul { border: solid 0px #0657E3; background: #DDDDDD; -webkit-box-shadow: 4px 5px 5px 0 rgba(0,0,0,0.6); box-shadow: 4px 5px 5px 0 rgba(0,0,0,0.6); }
+.navx>ul>li { margin: 0; padding: 0; text-align: center; }
+.navx>ul>li:hover { }
+.navx>ul>li:first-child a { border-left: 0; text-align: center; }
+.navx>ul>li:first-child a i { font-size: 17px; line-height: 32px; }
+.navx>ul>li:last-child { border-right: 0; background-image: none }
+}
+@media screen and (max-width:992px) and (min-width:768px) {
+.navx>ul>li> .lv1 >a { font-size: 0.8em; padding-left: 5px; padding-right: 5px; }
+.navy a { font-size: 0.9em; padding-left: 15px }
+}
+ @media screen and (max-width: 768px) {
+.navx >ul li > i { display: inline-block !important }
+.tg-search { display: block }
+.navx { padding: 0 }
+.navx:before, .navx:after { width: 0; }
+.navx>ul>li> .lv1 >a { font-size: 0.9em; padding-left: 15px; padding-right: 15px; line-height: 40px }
+.btn_navx { display: block; }
+.navx>ul>li> .lv1 >a:before { line-height: 40px; }
+.navx >ul { display: none; margin-top: 0px; position: absolute; top: 100%; left: 0px; width: 100%; background: #ddd; z-index: 9; }
+.navx >ul>li { float: none; border: 0; margin: 0; text-align: left; width: 100%; display: inline-block; padding-top: 5px; padding-bottom: 5px; position: relative; padding: 0 }
+.navx >ul>li:hover, .navx >ul>li:active, .navx >ul>li:focus { }
+.navx>ul>li:hover> .lv1 > a, .navx>ul>li.active> .lv1 > a, .navx>ul>li:focus> .lv1 > a { color: #000 }
+.navx >ul>li> .lv1 >a { color: #000; padding: 0; padding-left: 10px; }
+.navx>ul>li:first-child { }
+.navx ul li, .navx ul, .navx ul ul { }
+.navx ul li { border-bottom: solid #ccc 1px; }
+.navx ul li:hover>ul { display: none; }
+.navx ul ul, .navx ul ul ul { position: relative; clear: both; top: auto; left: 0; background: #fff }
+.navx ul ul li { border-bottom: #ccc solid 1px; background: #eee; padding: 0; position: relative }
+.navx ul ul li:hover { background: #ddd; }
+.navx ul ul a { padding-left: 10px; color: #1A150B; line-height: 35px; }
+.navx ul ul li:hover a { color: #000 }
+.navx > ul > li > ul { position: relative; clear: both; top: auto; left: auto; }
+.navx ul ul a { line-height: 40px; width: 100% }
+.navx ul ul ul a { padding-left: 20px; line-height: 30px; }
+.navx ul ul ul li { background: #fff }
+}
+.caretB { display: inline-block; width: 0; height: 0; vertical-align: middle; border-left: 5px solid transparent; border-right: 5px solid transparent; border-bottom: 5px solid; color: #ddd; position: absolute; top: -5px; left: 40px }
