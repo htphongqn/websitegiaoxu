@@ -248,6 +248,27 @@ namespace Controller
             var list = db.ESHOP_CATEGORies.Where(n => n.CAT_TYPE == type && n.CAT_RANK == rank && n.CAT_STATUS == 1&&n.CAT_POSITION==postion).OrderByDescending(n => n.CAT_ORDER).ToList();
             return list;
         }
+        public int getNameCatID(string catSeoUrl)
+        {
+            int temp = 0;
+            var list = db.ESHOP_CATEGORies.Where(n => n.CAT_SEO_URL == catSeoUrl).ToList();
+            if (list.Count > 0)
+                temp = list[0].CAT_ID;
+            return temp;
+        }
+        public string getNameCat(int catParentId)
+        {
+            string temp = "";
+            var list = db.ESHOP_CATEGORies.Where(n => n.CAT_ID == catParentId).ToList();
+            if (list.Count > 0)
+                temp = list[0].CAT_NAME;
+            return temp;
+        }
+        public List<ESHOP_CATEGORy> Load_danhmuc_chabyID(int idCat)
+        {
+            var list = db.ESHOP_CATEGORies.Where(n => n.CAT_STATUS == 1 && n.CAT_PARENT_ID == idCat).OrderByDescending(n => n.CAT_ORDER).ToList();
+            return list;
+        }
         public int Getactive_menudanhmuc(string cat_seo, string news_seo)
         {
             int cat_id = 0;

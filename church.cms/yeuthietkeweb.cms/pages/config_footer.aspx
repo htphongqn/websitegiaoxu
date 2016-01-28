@@ -26,7 +26,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-12">
+        <div class="col-lg-12" style="display:none;">
             <div class="panel panel-default"> 
                 <div class="panel-heading">
                     Thông tin tiếng anh

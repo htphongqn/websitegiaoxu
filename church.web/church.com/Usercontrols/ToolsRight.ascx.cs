@@ -16,6 +16,7 @@ namespace church.Usercontrols
         Function fun = new Function();
         List_product list_pro = new List_product();
         Home index = new Home();
+        News_details ndetail = new News_details();
         #endregion
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -33,6 +34,14 @@ namespace church.Usercontrols
             {
                 rptLoadData.DataSource = index.Loadindex(0, 3, -1, 3);
                 rptLoadData.DataBind();
+                //Lịch làm việc
+                var list1 = index.Loadindex(0, 4, -1, 1);
+                if (list1.Count > 0)
+                    liLoad1.Text = getString(list1[0].NEWS_TITLE, ndetail.Showfilehtm(list1[0].CAT_SEO_URL, list1[0].NEWS_SEO_URL));
+                //Links
+                var list2 = index.Loadindex(0, 5, -1, 1);
+                if (list2.Count > 0)
+                    liLoad2.Text = getString(list2[0].NEWS_TITLE, ndetail.Showfilehtm(list2[0].CAT_SEO_URL, list2[0].NEWS_SEO_URL));
             }
             catch
             {
@@ -54,6 +63,12 @@ namespace church.Usercontrols
         #endregion
 
         #region Function
+        private string getString(string s1, string s2)
+        {
+            string str = "";
+            str = String.Format("<div class='bl'><h3 class='tt-side'><span>{0}</span></h3><div class='inner-bl'>{1}</div></div>", s1, s2);
+            return str;
+        }
         public string GetLinkNews(object News_Url, object News_Seo_Url, object cat_seo)
         {
             try

@@ -179,9 +179,12 @@
                         <label>Hiển thị đặc biệt</label>
                         <asp:RadioButtonList ID="rblNewsPeriod" runat="server" RepeatColumns="3" 
                             RepeatDirection="Horizontal">
-                            <asp:ListItem Text="Tin trang chủ cột trên" Value="1"></asp:ListItem>
-                            <asp:ListItem Text="Tin trang chủ cột dưới" Value="2"></asp:ListItem>
+                            <asp:ListItem Text="Không" Value="0" Selected="True"></asp:ListItem>
+                            <asp:ListItem Text="Tin mới trang chủ" Value="1"></asp:ListItem>
+                            <asp:ListItem Text="Tin nổi bật trang chủ" Value="2"></asp:ListItem>
                             <asp:ListItem Text="Tin cột phải" Value="3"></asp:ListItem>
+                            <asp:ListItem Text="Lịch làm việc" Value="4"></asp:ListItem>
+                            <asp:ListItem Text="Links" Value="5"></asp:ListItem>
                         </asp:RadioButtonList>
                     </div>
                     <div class="form-group">

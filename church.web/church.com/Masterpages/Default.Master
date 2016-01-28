@@ -2,7 +2,6 @@
 
 <%@ Register src="../Usercontrols/Header.ascx" tagname="Header" tagprefix="uc1" %>
 <%@ Register src="../Usercontrols/MenuTop.ascx" tagname="MenuTop" tagprefix="uc2" %>
-<%@ Register src="../Usercontrols/Slide.ascx" tagname="Slide" tagprefix="uc3" %>
 <%@ Register src="../Usercontrols/Footer.ascx" tagname="Footer" tagprefix="uc6" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -26,9 +25,6 @@
     <!--MenuTop-->
     <uc2:MenuTop ID="MenuTop1" runat="server" />
     <!--End MenuTop-->
-    <!--Slide-->
-    <uc3:Slide ID="Slide1" runat="server" />
-    <!--End Slide-->
     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
     </asp:ContentPlaceHolder>
     <!--Footer-->

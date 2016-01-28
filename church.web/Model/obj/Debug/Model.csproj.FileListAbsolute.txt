@@ -147,3 +147,9 @@ H:\SoftWeb\ChurchSfxparish\church.web\Model\bin\Debug\Model.pdb
 H:\SoftWeb\ChurchSfxparish\church.web\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 H:\SoftWeb\ChurchSfxparish\church.web\Model\obj\Debug\Model.dll
 H:\SoftWeb\ChurchSfxparish\church.web\Model\obj\Debug\Model.pdb
+H:\SoftWeb\websitegiaoxu\church.web\Model\bin\Debug\Model.dll.config
+H:\SoftWeb\websitegiaoxu\church.web\Model\bin\Debug\Model.dll
+H:\SoftWeb\websitegiaoxu\church.web\Model\bin\Debug\Model.pdb
+H:\SoftWeb\websitegiaoxu\church.web\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+H:\SoftWeb\websitegiaoxu\church.web\Model\obj\Debug\Model.dll
+H:\SoftWeb\websitegiaoxu\church.web\Model\obj\Debug\Model.pdb

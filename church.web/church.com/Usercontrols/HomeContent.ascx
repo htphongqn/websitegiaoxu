@@ -1,7 +1,7 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="HomeContent.ascx.cs" Inherits="church.Usercontrols.HomeContent" %>
 
 <div class="iblock">
-    <p class="tt-main"><span>Tin tức</span></p>
+    <p class="tt-main"><span>Tin mới</span></p>
     <div class="inner-iblock">
         <div class="list-media media-1">
             <asp:Repeater ID="rptLoadData" runat="server">
@@ -27,7 +27,7 @@
 </div>
 
 <div class="iblock">
-    <p class="tt-main"><span>STEVE’S COLUMN…</span></p>
+    <p class="tt-main"><span>Tin nổi bật</span></p>
     <div class="inner-iblock">
         <div class="list-media list-media-box">
             <asp:Repeater ID="rptLoadData1" runat="server">

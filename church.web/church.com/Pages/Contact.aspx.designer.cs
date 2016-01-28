@@ -22,6 +22,24 @@ namespace church {
         protected global::System.Web.UI.WebControls.Literal ltrFavicon;
         
         /// <summary>
+        /// Literal2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal Literal2;
+        
+        /// <summary>
+        /// Literal1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal Literal1;
+        
+        /// <summary>
         /// Txtname control.
         /// </summary>
         /// <remarks>
@@ -130,22 +148,13 @@ namespace church {
         protected global::System.Web.UI.WebControls.LinkButton Lbthanhtoan;
         
         /// <summary>
-        /// Literal1 control.
+        /// ToolsRight1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal Literal1;
-        
-        /// <summary>
-        /// Literal2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal Literal2;
+        protected global::church.Usercontrols.ToolsRight ToolsRight1;
         
         /// <summary>
         /// ValidationSummary1 control.

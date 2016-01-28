@@ -9,25 +9,9 @@
     </div>
 </div>
 
-<div class="bl">
-    <h3 class="tt-side"><span>MASS SCHEDULE</span></h3>
-    <div class="inner-bl"> <b>Saturday:</b> 4pm Vigil<br />
-        <b>Sunday:</b> 8am & 10:30am<br />
-        <b>Mon-Wed:</b> 9am (daily Mass)<br />
-        <b>Thursday:</b> 5:30pm (Latin)<br />
-        <b>Fri-Sat:</b> 9am (daily Mass)<br />
-    </div>
-</div>
+<asp:Literal ID="liLoad1" runat="server"></asp:Literal>
    
-<div class="bl quick-link">
-    <h3 class="tt-side"><span>QUICK LINKS</span></h3>
-    <div class="inner-bl">
-        <p><i class="fa fa-calendar"></i> <span><a title="">PARISH CALENDAR</a></span></p>
-        <p><i class="fa fa-user"></i> <span><a title="">ASSIGNMENTS</a></span></p>
-        <p><i class="fa fa-phone"></i> <span><a title="">CONTACT US</a></span></p>
-    </div>
-</div>
-
+<asp:Literal ID="liLoad2" runat="server"></asp:Literal>
 
 <asp:Repeater ID="rptAds" runat="server">
 <HeaderTemplate>
@@ -49,7 +33,7 @@
         <asp:Repeater ID="rptLoadData" runat="server">
         <ItemTemplate>
             <article class="media">
-                <h2 class="tt-media"><a href="<%# GetLinkNews(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL")) %>">PARISH ROSARY CD</a></h2>
+                <h2 class="tt-media"><a href="<%# GetLinkNews(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL")) %>"><%# Eval("NEWS_TITLE")%></a></h2>
                 <figure class="photo-media">
                     <a href="<%# GetLinkNews(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL")) %>" title="">
                         <img src="<%# GetImageT(Eval("NEWS_ID"),Eval("NEWS_IMAGE3")) %>" alt=""/></a>
@@ -61,9 +45,4 @@
         </ItemTemplate>
         </asp:Repeater>
     </div>
-</div>
-   
-<div class="bl">
-    <h3 class="tt-side"><span>GOING AWAY?</span></h3>
-    <div class="inner-bl"> Visit Masstimes.org to find Churches and Masses for when you are traveling. </div>
 </div>
