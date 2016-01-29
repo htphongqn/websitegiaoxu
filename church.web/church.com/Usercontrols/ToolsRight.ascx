@@ -4,8 +4,10 @@
     <h3 class="tt-side"><span>Tìm kiếm</span></h3>
     <div class="search1">
         <p class="innersearch">
-        <input class="txt-search1" name="" type="text" placeholder="Từ khóa tìm kiếm…"/>
-        <a class="btn-search1" title="Tìm kiếm"><i class="fa fa-search"></i></a> </p>
+            <input id="txtSearch" class="txt-search1" name="txtSearch" type="text" placeholder="Từ khóa tìm kiếm…" runat="server"/>
+            <asp:LinkButton ID="btnSearch" runat="server" class="btn-search1" 
+                onclick="btnSearch_Click"><i class="fa fa-search"></i></asp:LinkButton>
+        </p>
     </div>
 </div>
 

@@ -152,6 +152,7 @@
     <Content Include="Usercontrols\NewsDetail.ascx" />
     <Content Include="Usercontrols\NewsRight.ascx" />
     <Content Include="Usercontrols\Path.ascx" />
+    <Content Include="Usercontrols\SearchResult.ascx" />
     <Content Include="Usercontrols\Slide.ascx" />
     <Content Include="Usercontrols\Toolbar.ascx" />
     <Content Include="Usercontrols\ToolsRight.ascx" />
@@ -284,6 +285,13 @@
     </Compile>
     <Compile Include="Usercontrols\Path.ascx.designer.cs">
       <DependentUpon>Path.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Usercontrols\SearchResult.ascx.cs">
+      <DependentUpon>SearchResult.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usercontrols\SearchResult.ascx.designer.cs">
+      <DependentUpon>SearchResult.ascx</DependentUpon>
     </Compile>
     <Compile Include="Usercontrols\Slide.ascx.cs">
       <DependentUpon>Slide.ascx</DependentUpon>

@@ -39,7 +39,7 @@ namespace aktech.Pages
                 prodetails = Page.LoadControl("../Usercontrols/GalleryDetail.ascx") as UserControl;
                 list_news = Page.LoadControl("../Usercontrols/ListNews.ascx") as UserControl;
                 details_news = Page.LoadControl("../Usercontrols/NewsDetail.ascx") as UserControl;
-                //search = Page.LoadControl("../Usercontrols/SearchResult.ascx") as UserControl;
+                search = Page.LoadControl("../Usercontrols/SearchResult.ascx") as UserControl;
                 int _type = Utils.CIntDef(Request["type"]);
                 string _catSeoUrl = Utils.CStrDef(Request.QueryString["curl"]);
                 string _newsSeoUrl = Utils.CStrDef(Request.QueryString["purl"]);

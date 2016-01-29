@@ -10,8 +10,16 @@
             <div class="getemail">
                 <h2 class="tt-ft">Đăng ký nhận tin mới</h2>
                 <p class="innergetemail">
-                <input class="txt-getemail" name="" type="text" placeholder="Nhập email của bạn…"/>
-                <a class="btn-getemail" title="Đăng ký nhận email"><i class="send-ico">Gửi</i></a> </p>
+                    <input class="txt-getemail" id="txtEmail" runat="server" name="txtEmail" type="text" placeholder="Nhập email của bạn…"/>
+                    <asp:LinkButton CssClass="btn-getemail" ID="lbregisemail" runat="server"  ValidationGroup="GRegEmail"
+                            OnClick="lbregisemail_Click"><i class="send-ico">Gửi</i></asp:LinkButton>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Vui lòng nhập e-mail!" Display="None"
+                            Text="Vui lòng nhập e-mail!" ControlToValidate="txtEmail" CssClass="required"  ValidationGroup="GRegEmail"></asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="regexEmailValid" runat="server" ValidationExpression="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"
+                            ControlToValidate="txtEmail" ErrorMessage="E-mail không đúng định dạng!" CssClass="required"  Display="None"
+                                ValidationGroup="GRegEmail"></asp:RegularExpressionValidator>
+                    <asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="Red" ShowMessageBox="True" ShowSummary="False" ValidationGroup="GRegEmail" />
+                </p>
             </div>
             <div class="fright right-ft">
                 <p class="tt-ft">Kết nối với chúng tôi</p>

@@ -10,60 +10,42 @@
 namespace church.Usercontrols {
     
     
-    public partial class ToolsRight {
+    public partial class SearchResult {
         
         /// <summary>
-        /// txtSearch control.
+        /// Path1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtSearch;
+        protected global::church.UIs.Path Path1;
         
         /// <summary>
-        /// btnSearch control.
+        /// Rplistnews control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnSearch;
+        protected global::System.Web.UI.WebControls.Repeater Rplistnews;
         
         /// <summary>
-        /// liLoad1 control.
+        /// ltrPage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal liLoad1;
+        protected global::System.Web.UI.WebControls.Literal ltrPage;
         
         /// <summary>
-        /// liLoad2 control.
+        /// ToolsRight1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal liLoad2;
-        
-        /// <summary>
-        /// rptAds control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptAds;
-        
-        /// <summary>
-        /// rptLoadData control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptLoadData;
+        protected global::church.Usercontrols.ToolsRight ToolsRight1;
     }
 }

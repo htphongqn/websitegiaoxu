@@ -140,5 +140,11 @@ namespace church.Usercontrols
 
         }
         #endregion
+
+        protected void btnSearch_Click(object sender, EventArgs e)
+        {
+            string s = txtSearch.Value;
+            Response.Redirect("/tim-kiem.html?page=0&key=" + s + "");
+        }
     }
 }
